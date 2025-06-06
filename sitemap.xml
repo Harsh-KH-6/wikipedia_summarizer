@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+                            http://www.google.com/schemas/sitemap-image/1.1
+                            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
   <url>
-    <loc>https://wikipedia-summarizer.com/</loc>
+    <loc>https://wikipedia-summarizer.netlify.app/</loc>
     <lastmod>2024-03-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://wikipedia-summarizer.netlify.app/icons/og-image.png</image:loc>
+      <image:title>Wikipedia Summarizer - AI-Powered Article Summarization Tool</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://wikipedia-summarizer.com/legal/terms.html</loc>
+    <loc>https://wikipedia-summarizer.netlify.app/legal/terms.html</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://wikipedia-summarizer.com/legal/privacy.html</loc>
+    <loc>https://wikipedia-summarizer.netlify.app/legal/privacy.html</loc>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://wikipedia-summarizer.netlify.app/legal/cookies.html</loc>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://wikipedia-summarizer.netlify.app/legal/disclaimer.html</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
