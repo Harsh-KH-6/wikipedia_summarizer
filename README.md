@@ -12,7 +12,16 @@ A web application that provides concise summaries of Wikipedia articles using AI
 - Responsive design
 - User feedback system
 
+## Skills Demonstrated
 
+- Prompt Engineering (for interacting with AI models)
+- Search Engine Optimization (SEO)
+- Web Deployment (using Netlify)
+- Git and GitHub Workflow
+- HTML, CSS, and JavaScript
+- API Integration (Wikipedia API)
+
+  
 ## Live Demo
 
 https://wikipediasummerizer.netlify.app/
