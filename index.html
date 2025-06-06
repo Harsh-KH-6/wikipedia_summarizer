@@ -1,43 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Wikipedia Summarizer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Primary Meta Tags -->
+    <title>Wikipedia Summarizer - Get Quick, Accurate Wikipedia Article Summaries</title>
+    <meta name="title" content="Wikipedia Summarizer - Get Quick, Accurate Wikipedia Article Summaries">
+    <meta name="description" content="Instantly get concise summaries of any Wikipedia article. Save time and get the key information you need with our AI-powered Wikipedia Summarizer tool.">
+    <meta name="keywords" content="Wikipedia summary, article summarizer, quick Wikipedia, AI summary, text summarization, Wikipedia tool">
+    <meta name="author" content="Wikipedia Summarizer">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wikipedia-summarizer.com/">
+    <meta property="og:title" content="Wikipedia Summarizer - Get Quick, Accurate Wikipedia Article Summaries">
+    <meta property="og:description" content="Instantly get concise summaries of any Wikipedia article. Save time and get the key information you need with our AI-powered Wikipedia Summarizer tool.">
+    <meta property="og:image" content="https://wikipedia-summarizer.com/icons/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://wikipedia-summarizer.com/">
+    <meta property="twitter:title" content="Wikipedia Summarizer - Get Quick, Accurate Wikipedia Article Summaries">
+    <meta property="twitter:description" content="Instantly get concise summaries of any Wikipedia article. Save time and get the key information you need with our AI-powered Wikipedia Summarizer tool.">
+    <meta property="twitter:image" content="https://wikipedia-summarizer.com/icons/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icons/favicon.png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wikipedia-summarizer.com/">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data for Rich Results -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Wikipedia Summarizer",
+        "description": "An AI-powered tool that provides concise summaries of Wikipedia articles",
+        "url": "https://wikipedia-summarizer.com",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            Wikipedia Summarizer
-        </div>
-
-        <div class="main-content">
-            <div class="initial-message" id="initial-message">
-                Enter a topic below to get a Wikipedia summary.
+        <header class="header">
+            <div class="header-content">
+                <h1 class="header-title">Wikipedia Summarizer</h1>
             </div>
+        </header>
 
-            <div class="content-area" id="content-area" style="display: none;">
-                <h2 id="topic-title"></h2>
-                <img id="topic-image" src="" alt="Topic Image" style="display: none;">
-                <div id="summary-text"></div>
-                <a id="full-article-link" href="#" target="_blank" style="display: none;">Read full article here</a>
+        <main class="main-content">
+            <div class="content-wrapper">
+                <div class="initial-message" id="initial-message">
+                    Enter a topic below to get a Wikipedia summary.
+                </div>
+
+                <div class="content-area" id="content-area" style="display: none;">
+                    <h2 id="topic-title"></h2>
+                    <div class="topic-image-container">
+                        <img id="topic-image" src="" alt="Topic Image" style="display: none;">
+                    </div>
+                    <div id="summary-text" class="summary-text"></div>
+                    <a id="full-article-link" href="#" target="_blank" class="full-article-link" style="display: none;">Read full article here</a>
+                </div>
+
+                <div class="loading-indicator" id="loading-indicator">
+                    <div class="spinner"></div>
+                    <p>Fetching summary...</p>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-container">
+                        <input type="text" id="topic-input" placeholder="Enter topic here..." aria-label="Topic input">
+                        <button id="summarize-button">Summarize</button>
+                    </div>
+                    <div id="suggestions-container" class="suggestions-container"></div>
+                </div>
+
+                <div class="summary-actions" id="summary-actions" style="display: none;">
+                    <button id="copy-summary-button" class="action-button">
+                        <span class="button-icon">📋</span>
+                        Copy Summary
+                    </button>
+                    <button id="speak-summary-button" class="action-button" title="Listen to Summary">
+                        <span class="button-icon">🔊</span>
+                        Listen to Summary
+                    </button>
+                </div>
             </div>
-
-            <div class="loading-indicator" id="loading-indicator">
-                Fetching summary...
-            </div>
-        </div>
-
-        <div class="input-container">
-            <input type="text" id="topic-input" placeholder="Enter topic here...">
-            <button id="summarize-button">Summarize</button>
-        </div>
-        <div id="suggestions-container" class="suggestions-container"></div>
-        <div class="summary-actions" style="text-align: center; margin-top: 20px; display: none;">
-            <button id="copy-summary-button">Copy Summary</button>
-            <button id="speak-summary-button" class="summary-action-button" title="Listen to Summary">Listen to Summary</button>
-        </div>
+        </main>
     </div>
     
     <footer class="footer">
@@ -64,6 +127,16 @@
                             <button type="submit" class="footer-button">Send Feedback</button>
                         </form>
                     </div>
+                </div>
+            </div>
+            
+            <div class="footer-section legal-links">
+                <h3>Legal</h3>
+                <div class="legal-links-container">
+                    <a href="legal/terms.html">Terms and Conditions</a>
+                    <a href="legal/privacy.html">Privacy Policy</a>
+                    <a href="legal/cookies.html">Cookie Policy</a>
+                    <a href="legal/disclaimer.html">Disclaimer</a>
                 </div>
             </div>
         </div>
