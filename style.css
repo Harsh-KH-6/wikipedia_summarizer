@@ -1,0 +1,426 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #4285f4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.main-content {
+    padding: 20px 0;
+}
+
+#topic-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#topic-image {
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+#summary-text {
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#full-article-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #4285f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#full-article-link:hover {
+    text-decoration: underline;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+#topic-input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#topic-input:focus {
+    border-color: #4285f4;
+}
+
+#summarize-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#summarize-button:hover {
+    background-color: #3367d6;
+}
+
+.loading-indicator {
+    display: none;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    font-size: 16px;
+}
+
+.initial-message {
+    padding: 30px;
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.summary-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#copy-summary-button, #speak-summary-button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#copy-summary-button:hover, #speak-summary-button:hover {
+    background-color: #4cae4c;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .header {
+        margin: -10px -10px 15px -10px;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    .input-container {
+        flex-direction: column;
+    }
+    
+    #summarize-button {
+        width: 100%;
+    }
+    
+    .summary-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #copy-summary-button, #speak-summary-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Add styles for the footer */
+footer {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px; /* Space between columns */
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow */
+    min-width: 150px; /* Minimum width for sections before wrapping */
+}
+
+.footer-section h3 {
+    color: #4285f4; /* Blue color for headings */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #cccccc; /* Light grey for links */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ffffff; /* White on hover */
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #4285f4; /* Blue on hover */
+}
+
+.copyright {
+    text-align: center;
+    color: #cccccc;
+    font-size: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333333; /* Separator line */
+}
+
+/* Add styles for suggestions container and items */
+.suggestions-container {
+    border: 1px solid #ddd;
+    border-top: none;
+    max-height: 200px; /* Limit height and enable scrolling */
+    overflow-y: auto;
+    background-color: white;
+    position: relative; /* Needed for proper positioning below the input */
+    z-index: 10; /* Ensure suggestions appear above other content */
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 20px; /* Align with input container padding */
+}
+
+.suggestion-item {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .header {
+        margin: -10px -10px 15px -10px;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    .input-container {
+        flex-direction: column;
+    }
+    
+    #summarize-button {
+        width: 100%;
+    }
+    
+    .summary-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #copy-summary-button, #speak-summary-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.feedback-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feedback-options p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.feedback-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.feedback-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.feedback-link:hover {
+    background-color: #0056b3;
+}
+
+.feedback-icon {
+    font-size: 1.2rem;
+}
+
+.feedback-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feedback-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.footer-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+    align-self: center;
+    min-width: 200px;
+}
+
+.footer-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .feedback-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .feedback-link {
+        justify-content: center;
+    }
+} 

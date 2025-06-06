@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wikipedia Summarizer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Wikipedia Summarizer
+        </div>
+
+        <div class="main-content">
+            <div class="initial-message" id="initial-message">
+                Enter a topic below to get a Wikipedia summary.
+            </div>
+
+            <div class="content-area" id="content-area" style="display: none;">
+                <h2 id="topic-title"></h2>
+                <img id="topic-image" src="" alt="Topic Image" style="display: none;">
+                <div id="summary-text"></div>
+                <a id="full-article-link" href="#" target="_blank" style="display: none;">Read full article here</a>
+            </div>
+
+            <div class="loading-indicator" id="loading-indicator">
+                Fetching summary...
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="topic-input" placeholder="Enter topic here...">
+            <button id="summarize-button">Summarize</button>
+        </div>
+        <div id="suggestions-container" class="suggestions-container"></div>
+        <div class="summary-actions" style="text-align: center; margin-top: 20px; display: none;">
+            <button id="copy-summary-button">Copy Summary</button>
+            <button id="speak-summary-button" class="summary-action-button" title="Listen to Summary">Listen to Summary</button>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Give Feedback</h3>
+                <div class="feedback-options">
+                    <p>We value your feedback! You can reach us through:</p>
+                    <div class="feedback-links">
+                        <a href="mailto:YOUR_EMAIL_HERE" class="feedback-link">
+                            <span class="feedback-icon">📧</span>
+                            Email Us
+                        </a>
+                        <a href="https://github.com/YOUR_USERNAME/wikipedia_summarizer/issues" target="_blank" class="feedback-link">
+                            <span class="feedback-icon">🐛</span>
+                            Report on GitHub
+                        </a>
+                    </div>
+                    <div class="feedback-form-container">
+                        <p>Or leave your feedback here:</p>
+                        <form id="feedback-form" class="footer-form">
+                            <textarea id="feedback-text" placeholder="Share your thoughts about Wikipedia Summarizer..." required></textarea>
+                            <div class="feedback-note">Note: Your feedback will be sent to our email.</div>
+                            <button type="submit" class="footer-button">Send Feedback</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
