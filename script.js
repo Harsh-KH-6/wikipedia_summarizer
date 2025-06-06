@@ -337,8 +337,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create mailto link with the feedback
         const subject = 'Wikipedia Summarizer Feedback';
         const body = encodeURIComponent(feedbackText);
-        // TODO: Replace with your email address
-        const mailtoLink = `mailto:YOUR_EMAIL_HERE?subject=${encodeURIComponent(subject)}&body=${body}`;
+        const mailtoLink = `mailto:projectfeedback06@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
         
         // Open default email client
         window.location.href = mailtoLink;
