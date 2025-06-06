@@ -26,7 +26,7 @@ A web application that provides concise summaries of Wikipedia articles using AI
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/wikipedia_summarizer.git
+git clone https://github.com/Harsh-KH-6/wikipedia_summarizer.git
 cd wikipedia_summarizer
 ```
 
