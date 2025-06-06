@@ -2,6 +2,7 @@
 
 A web application that provides concise summaries of Wikipedia articles using AI-powered summarization.
 
+
 ## Features
 
 - Quick and accurate Wikipedia article summaries
@@ -11,34 +12,17 @@ A web application that provides concise summaries of Wikipedia articles using AI
 - Responsive design
 - User feedback system
 
+
 ## Live Demo
 
-[Add your GitHub Pages URL here once deployed]
+https://wikipediasummerizer.netlify.app/
 
-## Getting Started
 
 ### Prerequisites
 
 - A modern web browser
 - Python 3.x (for local development server)
 
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Harsh-KH-6/wikipedia_summarizer.git
-cd wikipedia_summarizer
-```
-
-2. Start the local server:
-```bash
-python -m http.server 8000
-```
-
-3. Open your browser and visit:
-```
-http://localhost:8000
-```
 
 ## Usage
 
@@ -47,6 +31,7 @@ http://localhost:8000
 3. Use the copy button to copy the summary
 4. Use the listen button to hear the summary
 5. Click the "Read full article" link to view the complete Wikipedia article
+
 
 ## Contributing
 
@@ -70,5 +55,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Wikipedia API
-- [Add any other acknowledgments here] 
+- Wikipedia API 
