@@ -58,6 +58,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Report bugs through GitHub Issues
 - Contact us directly through the email link in the footer
 
+---
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
