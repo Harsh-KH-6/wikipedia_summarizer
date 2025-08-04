@@ -41,6 +41,7 @@ https://wikipediasummerizer.netlify.app/
 4. Use the listen button to hear the summary
 5. Click the "Read full article" link to view the complete Wikipedia article
 
+---
 
 ## Contributing
 
