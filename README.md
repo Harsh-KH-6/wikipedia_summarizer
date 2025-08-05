@@ -12,6 +12,7 @@ A web application that provides concise summaries of Wikipedia articles using AI
 - Responsive design
 - User feedback system
 
+---
 ## Skills Demonstrated
 
 - Prompt Engineering (for interacting with AI models)
