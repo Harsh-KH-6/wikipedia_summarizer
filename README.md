@@ -26,12 +26,14 @@ A web application that provides concise summaries of Wikipedia articles using AI
 
 https://wikipediasummerizer.netlify.app/
 
+---
 
 ### Prerequisites
 
 - A modern web browser
 - Python 3.x (for local development server)
 
+---
 
 ## Usage
 
