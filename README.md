@@ -2,6 +2,7 @@
 
 A web application that provides concise summaries of Wikipedia articles using AI-powered summarization.
 
+---
 
 ## Features
 
