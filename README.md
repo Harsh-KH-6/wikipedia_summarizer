@@ -21,6 +21,7 @@ A web application that provides concise summaries of Wikipedia articles using AI
 - HTML, CSS, and JavaScript
 - API Integration (Wikipedia API)
 
+---
   
 ## Live Demo
 
